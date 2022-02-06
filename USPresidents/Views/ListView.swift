@@ -9,20 +9,33 @@ import SwiftUI
 
 struct ListView: View {
     
-    let presidents: Presidents
+    var pres: [Presidents] = PresidentList.presidents
+    
+   // let pres: Presidents
     
     
     var body: some View {
+        NavigationView {
                 
-        List {
-            Text(presidents.name)
+            List(pres, id: \.id) { presi in
+                    HStack {
+                    
+                        NavigationLink(destination: {
+                            PresidentDetailView(president: presi)
+                        }, label: {
+                    Text(presi.name)
+                    Spacer()
+                    Text("\(presi.ordinal)")
+                })
+                
+            }
         }
       
     }
 }
-
+}
 struct SwiftUIView_Previews: PreviewProvider {
     static var previews: some View {
-        ListView(presidents: PresidentList.presidents.first!)
+        ListView()
     }
 }

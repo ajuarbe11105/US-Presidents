@@ -15,6 +15,7 @@ struct Presidents: Identifiable {
     var ordinal: Int
     var name: String
     var YearsInOffice: String
+    var politicalParty: String
     var vicePresidents: String
     var firstLady: String
     var yearsMarried: String

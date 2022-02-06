@@ -10,11 +10,16 @@ import SwiftUI
 struct PresidentDetailView: View {
     
     let president: Presidents
+    
+    
     var body: some View {
-        VStack {
-            Text(president.name)
-            .font(.largeTitle)
-        AsyncImage(url: president.photo)
+        
+        ScrollView {
+            VStack {
+            AsyncImage(url: president.photo,scale: 2)
+                Spacer()
+            
+               // .frame(maxWidth: 50, maxHeight: 50)
             Text("President from: \(president.YearsInOffice)")
                 .font(.subheadline)
                 .padding()
@@ -23,11 +28,15 @@ struct PresidentDetailView: View {
                 .padding()
             Text(president.vicePresidents)
                 .font(.headline)
-            
-            Text("\(president.name) was married to \(president.firstLady) from \(president.yearsMarried)")
                 .padding()
+            
+            Text("Married to \(president.firstLady) from \(president.yearsMarried)")
+                    .font(.subheadline)
+                    
         }
     }
+        .navigationTitle(president.name)
+}
 }
 
 struct PresidentDetailView_Previews: PreviewProvider {
