@@ -11,7 +11,7 @@ import SwiftUI
 struct USPresidentsApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ListView(presidents: PresidentList.presidents.first!)
         }
     }
 }
