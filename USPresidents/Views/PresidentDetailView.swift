@@ -21,13 +21,13 @@ struct PresidentDetailView: View {
             
                // .frame(maxWidth: 50, maxHeight: 50)
             Text("President from: \(president.YearsInOffice)")
-                .font(.subheadline)
+                .font(.headline)
                 .padding()
             Text("Vice President: ")
-                .font(.headline)
-                .padding()
+                .font(.title)
             Text(president.vicePresidents)
                 .font(.headline)
+                .fontWeight(.medium)
                 .padding()
             
             Text("Married to \(president.firstLady) from \(president.yearsMarried)")
