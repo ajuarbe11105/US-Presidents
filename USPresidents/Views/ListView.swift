@@ -21,7 +21,7 @@ struct ListView: View {
                     HStack {
                     
                         NavigationLink(destination: {
-                            PresidentDetailView(president: presi)
+                            PresidentDetailView2(president: presi)
                         }, label: {
                     Text(presi.name)
                     Spacer()

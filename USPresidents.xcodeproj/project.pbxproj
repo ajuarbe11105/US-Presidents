@@ -19,6 +19,8 @@
 		0BCD811827AF856E00221987 /* PresidentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCD811727AF856E00221987 /* PresidentDetailView.swift */; };
 		0BCD811A27AF885D00221987 /* Influentialmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCD811927AF885D00221987 /* Influentialmodel.swift */; };
 		0BCD811C27AF8C0600221987 /* PresidentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCD811B27AF8C0600221987 /* PresidentData.swift */; };
+		0BCD811E27B201E100221987 /* PresidentDetailView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCD811D27B201E100221987 /* PresidentDetailView2.swift */; };
+		0BCD812027B203B700221987 /* Cardview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCD811F27B203B700221987 /* Cardview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,8 @@
 		0BCD811727AF856E00221987 /* PresidentDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresidentDetailView.swift; sourceTree = "<group>"; };
 		0BCD811927AF885D00221987 /* Influentialmodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Influentialmodel.swift; sourceTree = "<group>"; };
 		0BCD811B27AF8C0600221987 /* PresidentData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresidentData.swift; sourceTree = "<group>"; };
+		0BCD811D27B201E100221987 /* PresidentDetailView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresidentDetailView2.swift; sourceTree = "<group>"; };
+		0BCD811F27B203B700221987 /* Cardview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cardview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,8 @@
 			children = (
 				0BCD810D27AF77C800221987 /* ListView.swift */,
 				0BCD811727AF856E00221987 /* PresidentDetailView.swift */,
+				0BCD811D27B201E100221987 /* PresidentDetailView2.swift */,
+				0BCD811F27B203B700221987 /* Cardview.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -190,9 +196,11 @@
 				0BCD811A27AF885D00221987 /* Influentialmodel.swift in Sources */,
 				0BCD80FB27AF762B00221987 /* ContentView.swift in Sources */,
 				0BCD811027AF7CE300221987 /* File.swift in Sources */,
+				0BCD812027B203B700221987 /* Cardview.swift in Sources */,
 				0BCD80F927AF762B00221987 /* USPresidentsApp.swift in Sources */,
 				0BCD811627AF812600221987 /* PresidentModel.swift in Sources */,
 				0BCD811C27AF8C0600221987 /* PresidentData.swift in Sources */,
+				0BCD811E27B201E100221987 /* PresidentDetailView2.swift in Sources */,
 				0BCD810C27AF771B00221987 /* PresidentsData.swift in Sources */,
 				0BCD810E27AF77C800221987 /* ListView.swift in Sources */,
 			);
