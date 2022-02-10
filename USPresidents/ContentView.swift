@@ -15,13 +15,18 @@ struct ContentView: View {
         VStack {
             HStack{
      Rectangle()
-            .fill(.black)
+            .fill(.clear)
             .frame(width: 200, height: 200)
+            .overlay(
+                Text("US PRESIDENTS")
+            )
                 
                 Rectangle()
-                       .fill(.black)
+                       .fill(.clear)
                        .frame(width: 200, height: 200)
-
+                       .overlay(
+                       Text("Constition")
+                       )
             }
             
             HStack {
