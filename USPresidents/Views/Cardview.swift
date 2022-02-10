@@ -20,9 +20,9 @@ struct Cardview: View {
                     .resizable()
                     .aspectRatio(contentMode: .fill)
                 
-                Text(president.description)
+                Text(president.YearsInOffice)
                     .font(.subheadline)
-                    .lineSpacing(5)
+                  //  .lineSpacing(5)
                     .lineLimit(8)
                     .padding()
                     .foregroundColor(.white)
@@ -38,15 +38,16 @@ struct Cardview: View {
                 .font(.system(size: 30, weight: .medium))
                 .foregroundColor(.black)
             
-            Text("President from: \(president.YearsInOffice)")
-                .font(.headline)
-                .padding()
+       
+           
             Text("Vice President: ")
                 .font(.title)
             Text(president.vicePresidents)
                 .font(.headline)
                 .fontWeight(.medium)
                 .padding()
+            
+           
             
             Text("Married to \(president.firstLady) from \(president.yearsMarried)")
                     .font(.subheadline)

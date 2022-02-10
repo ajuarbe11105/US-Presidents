@@ -28,17 +28,31 @@ struct PresidentDetailView2: View {
                     Cardview(president: president)
                     VStack(alignment: .leading, spacing: 24) {
                         
-                        
+                      
                     }
+                    
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
                     .padding(.horizontal)
                     .padding(.top)
                 }
+               
             }
-        }
-        }
+            
         
+            
+           
+        }
+            
+            
+         
+          
+        }
+        Text("President from: \(president.description)")
+            .foregroundColor(.gray)
+            .font(.headline)
+           
+            .padding()
     }
 }
 
