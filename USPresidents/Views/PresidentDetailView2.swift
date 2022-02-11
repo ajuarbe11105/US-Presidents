@@ -23,6 +23,8 @@ struct PresidentDetailView2: View {
 //                    .rotationEffect(.degrees(90))
 //                    .offset(y: -screen.bounds.width * 0.7)
 //                    .ignoresSafeArea()
+                
+                
                 ForEach(pres, id: \.id) { presi in
                     
                     Cardview(president: president)
@@ -48,11 +50,6 @@ struct PresidentDetailView2: View {
          
           
         }
-        Text("President from: \(president.description)")
-            .foregroundColor(.gray)
-            .font(.headline)
-           
-            .padding()
     }
 }
 

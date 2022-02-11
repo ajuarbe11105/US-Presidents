@@ -12,32 +12,61 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         
+        NavigationView {
+        
         VStack {
             HStack{
-     Rectangle()
-            .fill(.clear)
-            .frame(width: 200, height: 200)
-            .overlay(
-                Text("US PRESIDENTS")
-            )
+                VStack {
+                NavigationLink(destination: {
+                    ListView()
+                }, label: {
+                    
+                    Rectangle()
+                        .fill(.clear)
+                        .frame(width: 200, height: 200)
+                        .overlay(
+                            Image("rushmore")
+                                .resizable()
+                                .scaledToFit()
+                                .cornerRadius(10)
+                            
+                        
+                        )
+                    
+
+                })
+                }
                 
-                Rectangle()
-                       .fill(.clear)
-                       .frame(width: 200, height: 200)
-                       .overlay(
-                       Text("Constition")
-                       )
+                NavigationLink(destination: {
+                    AmendmentDetailView()
+                }, label: {
+                    Rectangle()
+                        .fill(.clear)
+                        .frame(width: 200, height: 200)
+                        .overlay(
+                            Image("constitution")
+                                .resizable()
+                                .scaledToFit()
+                                .cornerRadius(10)
+                                .frame(width: 150, height: 150)
+                        )
+                    
+                })
             }
             
             HStack {
                 Rectangle()
-                       .fill(.black)
+                       .fill(.clear)
                        .frame(width: 200, height: 200)
+                       .overlay(
+                       Text("History Facts")
+                       
+                       )
 
                 Rectangle()
                        .fill(.black)
                        .frame(width: 200, height: 200)
-
+            }
             }
         }
     }

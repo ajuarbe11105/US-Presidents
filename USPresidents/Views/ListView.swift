@@ -11,13 +11,22 @@ struct ListView: View {
     
     var pres: [Presidents] = PresidentList.presidents
     
-   // let pres: Presidents
+    @State var searchText = ""
+    @State var searching = false
     
     
     var body: some View {
-        NavigationView {
+        
+        
+//        SearchBarView(text: $searchText)
+
+//        NavigationView {
+            
                 
-            List(pres, id: \.id) { presi in
+            List(pres.filter({_ in "($0)" .range(of: searchText, options: .caseInsensitive) != nil || searchText.isEmpty})) { presi in
+                
+
+//            List(pres, id: \.id) { presi in
                     HStack {
                     
                         NavigationLink(destination: {
@@ -32,8 +41,10 @@ struct ListView: View {
         }
       
     }
-}
-}
+        }
+    //}
+
+
 struct SwiftUIView_Previews: PreviewProvider {
     static var previews: some View {
         ListView()
