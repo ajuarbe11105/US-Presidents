@@ -13,22 +13,24 @@ struct AmendmentDetailView: View {
     var const: [Constitution2] = ConstitutionList2.constitutionInfo2
 
     var body: some View {
-        ScrollView {
         ZStack {
-            Color("ColorYellow")
-                .ignoresSafeArea(.all)
+            Image("bg")
+                .resizable()
+                .ignoresSafeArea()
+        ScrollView {
+               
             
             VStack {
                 ForEach(bor, id: \.id) { const in
                 
                     Text(const.amendmentNumber).underline()
                         .font(.largeTitle)
-                    
+                        .padding()
                     
                     Text(const.amemendmentDescription)
                         .font(.headline)
-                        .frame(width: 425)
-                        .padding(.all)
+                        .frame(width: 300)
+                      //  .padding(.all)
                     
                     
                   
@@ -40,7 +42,8 @@ struct AmendmentDetailView: View {
        // }
             
         }
-    }
+        }.navigationTitle("The Constitution")
+            .navigationBarTitleDisplayMode(.inline)
 }
 }
 
